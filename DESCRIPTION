@@ -1,0 +1,21 @@
+Package: mbDecoda
+Type: Package
+Title: A Debiased Approach to Compositional Data Analysis for Microbiome Surveys
+Version: 0.1.0
+Authors@R: 
+    person(given = "Yuxuan",
+           family = "Zong",
+           role = c("aut", "cre"),
+           email = "zongyuxuan@sjtu.edu.cn")
+Description: The mbDecoda package provides a debiased approach to compositional data analysis specifically designed for microbiome surveys. The methods implemented in this package are aimed at detecting differentially abundant taxa between different populations while adjusting for confounding variables and controlling the false discovery rate (FDR).
+License: GPL-3
+Encoding: UTF-8
+Language: es
+LazyData: false
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: R (>= 3.6.0), MASS, glmmTMB
+Imports: stats
+Suggests: 
+    rmarkdown, knitr,
+VignetteBuilder: knitr
