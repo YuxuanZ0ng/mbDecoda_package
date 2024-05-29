@@ -106,7 +106,7 @@ mbDecoda <- function(count, x, Gamma = NULL, W = NULL, interval.prob = 0.5, sign
   }
 
   # Filter rare taxa
-  tax_keep <- which(colSums(count) <= prev.cut)
+  tax_keep <- which(colMeans(count!=0)<=prev.cut)
 
   # Set up design matrices W and X
   if (is.null(W)) {
